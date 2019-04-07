@@ -49,4 +49,13 @@ end
 # get every test to pass before coding runner below #
 #####################################################
 
+def runner
+  welcome
+  curr_card_ttl = initial_round
+  until curr_card_ttl > 21
+  curr_card_ttl = hit?(curr_card_ttl)
+  display_card_total(curr_card_ttl)
+  end_game
+  end_game(curr_card_ttl)
+en
     
