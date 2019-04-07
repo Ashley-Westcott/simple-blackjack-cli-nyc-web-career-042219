@@ -40,10 +40,6 @@ def hit?(curr_card_ttl)
   end
 end
 
-def invalid_command
-  puts "Please enter a valid command"
-  prompt_user
-end
 
 #####################################################
 # get every test to pass before coding runner below #
