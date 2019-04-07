@@ -57,5 +57,5 @@ def runner
   display_card_total(curr_card_ttl)
   end_game
   end_game(curr_card_ttl)
-end
+en
     
