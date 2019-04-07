@@ -31,9 +31,9 @@ end
 def hit?(curr_card_ttl)
   prompt_user
   case get_user_input
-    when 's'
+    when "s"
     curr_card_ttl
-    when 'h'
+    when "h"
       curr_Card_ttl += deal_card
   else
     invalid_command
