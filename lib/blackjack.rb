@@ -51,7 +51,7 @@ end
 
 def runner
   welcome
-  initial_round
+  hand_sum = initial_round
   hit?
   display_card_total
   end_game
