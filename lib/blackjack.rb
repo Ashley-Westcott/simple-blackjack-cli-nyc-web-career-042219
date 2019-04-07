@@ -52,18 +52,13 @@ end
 
 
 def runner
-  # code runner here	  # code runner here
-  #runner calls on the #welcome method, 
-  #then on the #initial_round method, 
-  #then calls #hit? and #display_card_total methods
-  #-until- the card sum is greater than 21,
-  #then calls on the #end_game method
   welcome
-  total = initial_round
-  until total > 21
-    total = hit?(total)
-  display_card_total(total)
+  hand_sum = initial_round
+  until hand_sum > 21
+  hand_sum = hit?(hand_sum)
+  display_card_total(hand_sum)
+  end_game
+  end_game(hand_sum)
+    end
   end
-  end_game(total)
-
- end	end  
+end
