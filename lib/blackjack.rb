@@ -51,11 +51,11 @@ end
 
 def runner
   welcome
-  hand_sum = initial_round
-  until hand_sum > 21
-  hand_sum = hit?(hand_sum)
-  display_card_total(hand_sum)
+  curr_card_ttl = initial_round
+  until curr_card_ttl > 21
+  curr_card_ttl = hit?(curr_card_ttl)
+  display_card_total(curr_card_ttl)
   end_game
-  end_game(hand_sum)
+  end_game(curr_card_ttl)
 end
     
