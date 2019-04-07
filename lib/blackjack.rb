@@ -28,6 +28,17 @@ def initial_round
   return hand
 end
 
+def hit?(curr_card_ttl)
+  prompt_user
+  case get_user_input
+    when 's'
+    curr_card_ttl
+    when 'h'
+      curr_Card_ttl += deal_card
+  else
+    invalid_command
+end
+
 
 
 #####################################################
