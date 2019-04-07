@@ -37,6 +37,7 @@ def hit?(curr_card_ttl)
       curr_Card_ttl += deal_card
   else
     invalid_command
+  end
 end
 
 def invalid_command
